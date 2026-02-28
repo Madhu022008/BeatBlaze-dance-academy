@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBlaze | Sign Up</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+        <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 2rem;">
+            Beat<span>Blaze</span>
+        </a>
+
+        <h2>Join Our Academy</h2>
+        <p>Begin your classical dance journey</p>
+
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="e.g. Ananya Sharma">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" required minlength="6" placeholder="Minimum 6 characters">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Complete Registration</button>
+            <div id="errorMsg" class="error-message"></div>
+        </form>
+
+        <div class="auth-links">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

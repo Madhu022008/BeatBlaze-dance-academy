@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBlaze | Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body style="background-color: var(--bg-light);">
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Beat<span>Blaze</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+
+            <div class="auth-buttons" id="authButtons">
+                <!-- Dynamically populated by main.js -->
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-page" id="dashboardContent">
+        <div class="dashboard-header">
+            <div class="container">
+                <h1>Namaskaram, <span class="user-name-display">Student</span></h1>
+                <p>Welcome back to your BeatBlaze student portal.</p>
+            </div>
+        </div>
+
+        <div class="container dashboard-grid">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <ul class="sidebar-nav">
+                    <li><a href="#" class="active">Overview</a></li>
+                    <li><a href="#">My Classes</a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Payment History</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </aside>
+
+            <!-- Dashboard Content -->
+            <main class="dashboard-content">
+                <h2 style="margin-bottom: var(--spacing-md); color: var(--primary-color);">Dashboard Overview</h2>
+
+                <div class="dashboard-card">
+                    <h3>Your Profile</h3>
+                    <p><strong>Name:</strong> <span class="user-name-display"></span></p>
+                    <p><strong>Email:</strong> <span class="user-email-display"></span></p>
+                    <p><strong>Level:</strong> Beginner (Varnam)</p>
+                </div>
+
+                <div class="dashboard-card" style="border-left: 4px solid var(--secondary-color);">
+                    <h3>Upcoming Classes</h3>
+                    <div style="margin-top: var(--spacing-xs);">
+                        <p style="margin-bottom: 0.5rem;"><strong>Adavu Practice Session</strong><br><span
+                                style="color: #666; font-size: 0.9em;">Tomorrow, 10:00 AM - Guru Meenakshi</span></p>
+                        <p><strong>Theory & Expressions (Abhinaya)</strong><br><span
+                                style="color: #666; font-size: 0.9em;">Saturday, 4:00 PM - Guru Rajendran</span></p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Recent Announcements</h3>
+                    <p style="font-size: 0.95rem; color: #555;">Please bring your practice bells (Salangai) for the
+                        upcoming weekend workshop. Dress code is a neat cotton practice saree or kurti.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
